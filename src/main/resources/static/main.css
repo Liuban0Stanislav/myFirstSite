@@ -1,0 +1,70 @@
+/*Visual Studio code бесплатный редактор с подсказками для CSS*/
+
+/*импорт шрифта на страницу с сайта fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*{  /*все элементы на странице*/
+    margin: 0; /*внутренний отступ элементов*/
+    padding: 0; /*наружный отступ элементов*/
+}
+
+img{ /*все картинки*/
+    width: 100%;
+}
+
+body{
+    background: floralwhite;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /*жирность*/
+}
+
+a{ /*все ссылки*/
+    text-decoration: none; /*без нижнего подчеркивания */
+    color: #000000;
+    transition: color 500ms ease;
+    /*transition - плавный переход между свойствами для свойства color,
+    будет длиться 500 миллисекунд; ease название эффекта*/
+}
+
+a:hover{ /*эффект при наведении*/
+    color: #a4a4a4;
+}
+
+.container{/*класс container. см. в html-файле тег body и main*/
+    width: 1258px;
+    margin: 0 auto;/*по высоте 0, а по ширине - автоподбор ширины блока контейнера*/
+}
+
+header.container{
+    /*display: flex - сдвигает элементы header вправо страницы*/
+    display: flex;/*для отображения элементов используется технология Flexbox*/
+    justify-content: space-between;/*расположение элементов header с местом между ними*/
+    align-items: center;/*расположение элементов по центральной линии*/
+    margin-top: 50px;/*внешний отступ сверху в пикселях*/
+    margin-bottom: 30px;/*внешний отступ снизу в пикселях*/
+}
+
+header.logo{
+    color: black; /*цвет шрифта*/
+    font-weight: 600;/*жирность*/
+    font-size: 25px; /*размер шрифта в пикселях*/
+}
+
+header nav a { /*в теге <header> обращается к тегу <nav>, а в нем к тегу <a> */
+    margin-left: 15px; /*отступы между "Главная" и "Контакты"*/
+    }
+
+div.block{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid silver; /*обводка блока, указывается толщина и цвет*/
+    border-bottom-width: 2px; /*толщина нижней кромки обводки*/
+    background: #f2fffa;/*цвет фона блока*/
+    line-height: 300%;/*высота строк или отступ между строками*/
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;/*расположение текста по центру*/
+}

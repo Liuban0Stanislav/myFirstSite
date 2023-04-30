@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SKY.PRO HOMEWORK 2.4</title>
+    <!--подключаем файл со стилями-->
+    <link rel="stylesheet" th:href="@{/main.css}">
+</head>
+<body>
+    <!--из файла header вытаскиваем фрагмент header-->
+    <div th:replace="~{layouts/header :: header}"></div>
+    <main class="container">
+
+    </main>
+    <div th:replace="~{layouts/footer :: footer}"></div>
+</body>
+</html>
